@@ -1,18 +1,19 @@
 <template>
-  <div>
-    <h1>haha</h1>
-    <router-link :to="{name: 'HomeNews'}">news go</router-link>
-  </div>
+  <h1>FirstChild</h1>
 </template>
 
 <script>
 export default {
-  name: "Main",
-  created(){
+  name: "FirstChild",
+  beforeCreate() {
+    this.$mySpinner.setSpinner('start');
+  },
+  created() {
     let vm = this;
-    setTimeout(function(){
+    setTimeout(function () {
       vm.$mySpinner.setSpinner('stop');
     }, 1000)
+
   }
 }
 </script>
