@@ -6,10 +6,13 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import Vuesax from 'vuesax'
+import 'material-icons/iconfont/material-icons.css'
+Vue.use(Vuesax)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>'
 })
