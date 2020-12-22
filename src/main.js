@@ -14,7 +14,7 @@ Vue.use(Vuesax)
 /* eslint-disable no-new */
 import '@/assets/styles/app.css'
 
-import MySpinner from './plugins/CustomSpinner'
+import MySpinner from './plugins/MySpinner'
 Vue.use(MySpinner)
 // import mySpinner from 'plugins/CustomSpinner.js'
 // Vue.use(mySpinner)

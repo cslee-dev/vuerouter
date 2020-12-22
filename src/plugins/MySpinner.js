@@ -1,10 +1,12 @@
 const MySpinner = {}
+import SpinnerTemplate from '../layouts/spinner/CornerSpinner.vue'
 
-MySpinner.install = function(Vue, options){
+MySpinner.install = function (Vue, options) {
+  Vue.component('my-spinner', SpinnerTemplate)
+
   const methods = {
     setSpinner(command) {
       const SPINNER_START = 'start';
-      const SPINNER_STOP = 'stop';
       const appLoading = document.getElementById('loading-bg');
       console.log(appLoading);
       if (command === SPINNER_START) {
